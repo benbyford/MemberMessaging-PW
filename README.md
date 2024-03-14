@@ -14,7 +14,8 @@ Example usage - new thread form, thread and messages with reply form
 
 ## Public functions:
 
-`// get module
+```
+// get module
 $mm = $modules->getModule("MembersMessaging");
 
 // get count of total messages for this user
@@ -33,15 +34,18 @@ $userMessages = $mm->getUserMessages();
 $exe = $mm->execute();
 
 // if you want to delete all message pages and message id's saved to users, then call flushMessages()
-$mm->flushMessages();`
+$mm->flushMessages();
+```
 
 
 ## Basic usage:
 
-`// basic usage doing most of the above
+```
+// basic usage doing most of the above
 $mm = $modules->getModule("MembersMessaging");
 echo $mm->execute();
 
 // include example js and css implementation to help you get up and running with sending messages
 echo $mm->js();
-echo $mm->css();`
+echo $mm->css();
+```
